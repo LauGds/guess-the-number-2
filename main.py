@@ -14,6 +14,7 @@ def check_answer(guess, answer, turns):
     return turns - 1
   else:
     print(f"You got it! The answer was {answer}.")
+    
 #Make function to set difficulty.
 def set_difficulty():
   level = input("Choose a difficulty. Type 'easy' or 'hard': ")
@@ -23,6 +24,7 @@ def set_difficulty():
     return HARD_LEVEL_TURNS
     
 def game():
+  
 #Choosing a random number between 1 and 100.
   print(logo)
   print("\nWelcome to the Number Guessing Game!")
@@ -40,6 +42,6 @@ def game():
     if turns == 0:
       print("You've run out of guesses, you lose.")
       return      
-
+      
 
 game()
